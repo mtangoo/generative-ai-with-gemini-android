@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import tz.co.hosannahighertech.myfirstgeminiapp.screens.MainScreen
 import tz.co.hosannahighertech.myfirstgeminiapp.ui.theme.MyFirstGeminiAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,25 +23,17 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Your AI SDK Key is: ${BuildConfig.AI_API_KEY}")
+                    MainScreen(modifier = Modifier.fillMaxSize())
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     MyFirstGeminiAppTheme {
-        Greeting("Android")
+        MainScreen(modifier = Modifier.fillMaxSize())
     }
 }

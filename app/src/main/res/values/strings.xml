@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My First Gemini App</string>
+    <string name="action_send">Ask Gemini</string>
 </resources>
