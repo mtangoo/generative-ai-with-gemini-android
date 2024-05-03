@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Good day Android AI")
+                    Greeting("Your AI SDK Key is: ${BuildConfig.AI_API_KEY}")
                 }
             }
         }
